@@ -1,0 +1,228 @@
+package homeWork;
+
+import java.util.Random;
+import java.util.Vector;
+
+public class temeJava1 {
+public static void main(String[]args)
+{
+	int x = 100;
+	//Calculati si afisati suma primelor x numere pare (folosind o structura repetitiva
+	int sum=0;
+	for(int i=0; i<=x; i=i+2){
+		sum=sum+i;
+	}
+	System.out.println(sum);
+	
+	//{1,2,3,8,50,120,400,7,3,3,90,-4,-124,824,0};
+	//Fie vectorul numereFaine. Calculati si afisati minimul, maximul si media aritmetica a elementelor lui.
+	int[] numereFaine = new int[15]; 
+	numereFaine[0]=1;
+	numereFaine[1]=2;
+	numereFaine[2]=3;
+	numereFaine[3]=8;
+	numereFaine[4]=50;
+	numereFaine[5]=120;
+	numereFaine[6]=400;
+	numereFaine[7]=7;
+	numereFaine[8]=3;
+	numereFaine[9]=3;
+	numereFaine[10]=90;
+	numereFaine[11]=-4;
+	numereFaine[12]=-124;
+	numereFaine[13]=824;
+	numereFaine[14]=0;
+	int max=numereFaine[0];
+	int min=numereFaine[0];
+	int total= 0;
+	for(int j=0;j<=14;j=j+1){
+		if(numereFaine[j]>max){
+			max=numereFaine[j];
+		}
+		
+		if(numereFaine[j]<min){
+			min=numereFaine[j];
+			
+		}		
+		total=total+numereFaine[j];
+	}
+	
+		/////YAAAAY
+	
+	
+	System.out.println("Totalul este "+ total);
+	
+
+	System.out.println("Numarul maxim este "+ max);
+	System.out.println("Numarul minim este "+ min);
+	
+
+	
+	
+	
+	
+	
+	
+	String[] cuvint = {"nume","mers","activitate","sofer","tablou","caiet","program"};
+	//Fie vectorul cuvinte. Adaugati fiecarui cuvant din el prefixul "pre" si sufixul "lui" si afisati-le, despartite prin caracterul ","
+	String[] cuvinte= new String[7];
+	cuvinte[0]=	"nume";
+	cuvinte[1]=	"mers";
+	cuvinte[2]=	"activitate";
+	cuvinte[3]=	"sofer";
+	cuvinte[4]=	"tablou";
+	cuvinte[5]=	"caiet";
+	cuvinte[6]=	"program";
+	for(int i=0; i<7; i++){
+	System.out.println("pre"+cuvinte[i]+"ului");
+	}
+	
+	// warmer 
+	
+	
+	int numarator = 7;
+	int numitor = 3;
+	//Avand numaratorul si numitorul de mai sus, calculati si afisati catul si restul impartirii lor
+	
+	int cat= numarator/numitor;
+	 System.out.println("Câtul este "+cat);
+	int restul= numarator%numitor;
+	System.out.println("Restul este "+restul);
+	
+	
+	
+	
+	
+	
+	//Folosind vectorul numereFaine de mai sus, inlocuiti elementele impare cu numarul 0
+	
+	for(int j=0;j<=14;j=j+1){
+		if(numereFaine[j]%2!=0){
+			numereFaine[j]=0;
+		
+			
+			}
+		
+		System.out.print(numereFaine[j]+" ");
+	}
+	// did it!!! booyah!!
+	
+	
+	int[][] matrice = new int[2][2];
+	matrice[0][0] = 1;
+	matrice[0][1] = 2;
+	matrice[1][0] = 2;
+	matrice[1][1] = 7;
+	//Avand matricea de mai sus, calculati si afisati produsul numerelor de pe diagonala principala, impartit la produsul numerelor de pe diagonala secundara
+	System.out.println();
+	double diagonalaPrincipala= matrice[0][0]*matrice[1][1];
+	int diagonalaSecundara= matrice[0][1]*matrice[1][0];
+	double impartire= diagonalaPrincipala/diagonalaSecundara;
+	
+	System.out.println("Produsul numerelor de pe prima diagonala este "+diagonalaPrincipala +" ,produsul de pe diagonala secundara este "+diagonalaSecundara+" si impartirea este egala cu "+impartire);
+	
+	
+	//Creati un vector de cuvinte, apoi concatenati-le pentru a alcatui 2 propozitii corecte dpdv gramatical (si afisati-le)
+	
+	String[] vector= new String [13];
+	vector[0]= "face";
+	vector[1]= "Ana";
+	vector[2]= "mere";
+	vector[3]= "maine";
+	vector[4]= "duce";
+	vector[5]= "pere";
+	vector[6]= "Alin";
+	vector[7]= "merge";
+	vector[8]= "la";
+	vector[9]= "Paris";
+	vector[10]= "stoarce";
+	vector[11]= "pentru";
+	vector[12]= "suc";
+	String propozitie= new String();
+	for(int i=0;i<13;i++){
+		for(int j=0;j<13;j++){
+			if (i==j ){
+				continue;
+			 
+			}		
+			for(int k=0;k<13;k++){
+				if ( k==i  &&k==j ){
+					continue;
+				 
+				}		
+				for(int l=0;l<13;l++){
+					if (l==k && k==i && i==j ){
+						continue;
+					 
+					}		
+		
+				System.out.println( vector[i]+" "+vector[j]+" "+vector[k]+" "+vector[l]);
+				
+				
+				
+				
+				}}}
+			
+		
+		
+		
+	} 
+	
+	// sunt cam varza la concatenare :/
+	// oooook deci concateneaza cel putin 2 propozitii corecte dpdv gramatical
+	// doream sa fac sa imi genereze propozitii in care cuvintele sa nu se repete
+	//ceea ce am si facut.. numai ca genereaza 4 cuvinte* 13 total* cred ca 4 posibilitati de aranjare...
+	// e valid? merge ca homework? stiu ca nu e fail.. dar am un feeling ca nu e terminat..
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//Calculati (printr-o instructiune repetitiva) si afisati 8! (factorial)
+	
+	int factorial = 1;
+	for(int i=1; i<=8; i++){
+		factorial=factorial*i;
+		
+		
+		System.out.println(factorial);
+	}
+	
+	//woop woop!!
+	
+	
+	
+	double suma =0;
+	double[] vectorFain = {2.1,5.4,4.3,9.8,7.11,4.13,8,9,-4.2,48};
+	//Folosind vectorFain, creati un alt vector al carui elemente sa fie egale cu formula (element * pozitieElement) din vectorul principal
+	//ex: vectorNou[0] = 2.1 (elementul de pe pozitia 0 din vectorFain) * 0 (pozitia lui)
+	//ex2: vectorNou[4] = 7.11 * 4 ...etc
+	
+	
+	double[] vectorNou= {0,1,2,3,4,5,6,7,8,9};
+	
+	for (int i=0; i<=9; i++){
+		 suma= vectorFain[i]*vectorNou[i];
+		
+		System.out.println(vectorFain[i]+ " * "+vectorNou[i]+" = "+suma);
+	}
+	
+	//am stat o ora sa imi dau seama ca greseam la vector () in loc de []...
+	
+	
+	
+	
+	
+	
+	
+}
+}
