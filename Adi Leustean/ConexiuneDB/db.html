@@ -1,0 +1,99 @@
+<html>
+<head>
+    
+    <link rel="stylesheet" href="db.css"/>
+<script  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+<script src="db.js"></script>
+
+    </head>
+<body>
+    <button onclick="jsGetMessages()">Vezi lista DB</button>
+  
+<div class="chat" id="camera">
+<div class="mesaj"></div>
+    
+<br>
+    <table border="1px;" id="tabel">
+    <tr><th>Field</th>
+        <th>Answer</th>
+        <th>Button</th>
+        </tr>
+    <tr>
+        <th><input type="number" id="palindrom">
+                   </th>
+        <th id="raspunsP"></th>
+        <th><button onclick="jsPalindrom()">Palindrom?</button></th>
+        
+        
+        </tr>
+    </table>
+    
+    <br>
+    <br>
+        <table border="1px;" id="tabel">
+    <tr><th>Max number X</th>
+        <th>Answer</th>
+        <th>Button</th>
+        </tr>
+    <tr>
+        <th><input type="number" id="prime">
+                   </th>
+        <th id="primeR"> </th>
+        <th><button onclick="jsPrime()">Arata NR Prime</button></th>
+        
+        
+        </tr>
+    </table>
+    <br>
+    <br>
+     <table border="1px;" id="tabel">
+    <tr><th>X</th>
+        <th>Y</th>
+        <th>Answer</th>
+        <th>Button</th>
+        </tr>
+    <tr>
+        <th><input type="number" id="x">
+                   </th>
+        <th><input type="number" id="y">
+                   </th>
+        
+        <th id="numPare"></th>
+        <th><button onclick="jsEven()">NR pare</button></th>
+        
+        
+        </tr>
+    </table>
+    <br>
+    <br>
+      <table border="1px;" id="tabel">
+    <tr><th>Vector separated by Comma</th>
+        <th>Sorting Answer</th>
+        
+        <th>Button</th>
+        </tr>
+    <tr>
+        <th><input type="text" id="vector">
+                   </th>
+        <th id="sortResponse">
+                   </th>
+        
+       
+        <th><button onclick="jsSort()">Sortare</button></th>
+        
+        
+        </tr>
+    </table>
+    
+    
+    
+    </div>
+    
+    
+    
+    </body>
+
+
+</html>
